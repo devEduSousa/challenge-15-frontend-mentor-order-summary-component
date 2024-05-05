@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+/* 500, 700, 900 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d6e1ff;
+}
+
+main {
+    max-width: 280px;
+    border-radius: 20px;
+    background-color: #fefeff;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero {
+    background-image: url('../images/illustration-hero.svg');
+    background-size: cover;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 20px;
+}
+
+#description {
+    text-align: center;
+}
+
+#description h1 {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#description p {
+    color: hsl(224, 23%, 55%);
+    margin: 0 15px 20px;
+    line-height: 25px;
+}
+
+#plan {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f8f9fe;
+    margin: 0 15px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#plan img {
+    margin-right: 10px;
+}
+
+#plan .value-plan span {
+    font-weight: 700;
+}
+
+#plan .value-plan p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+#plan a {
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 15px 30px;
+}
+
+#buttons button {
+    padding: 15px 0;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+}
+
+#buttons button:last-child {
+    color: hsl(224, 23%, 55%);
+    background-color: transparent !important;
+}
+
+@media(min-width: 350px) {
+    main {
+        max-width: 300px;
+    }
+
+    #description p {
+        margin: 0 20px 20px;
+    }
+
+    #plan .value-plan {
+        font-size: 16px;
+    }
+
+    #plan a {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 750px) {
+    main {
+        max-width: 500px;
+    }
+
+    main #hero {
+        height: 250px;
+    }
+
+    #description h1 {
+        font-size: 36px;
+    }
+
+    #description p {
+        font-size: 20px;
+        margin: 0px 75px 20px;
+    }
+
+    #plan {
+        margin: 0px 50px 20px;
+        padding: 20px;
+    }
+
+    #plan img {
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    #plan .value-plan {
+        font-size: 20px;
+    }
+
+    #plan a {
+        font-size: 16px;
+    }
+
+    #buttons {
+        margin: 0 50px 30px
+    }
+}
